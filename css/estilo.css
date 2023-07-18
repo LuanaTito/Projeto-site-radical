@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/*
+Criando regras usando o fluxo de trabalho MOBILE FIRST
+
+Todas as regras declaradas a partir deste ponto serão voltadas ao site com 
+telas  mobile/pequenas.
+
+Posteriomente, criaremos as Medias Queries com somente os ajustes necessários
+para a exibição de em telas grandes/desktop.
+
+OBS: regras criadas nesta abordagem, também serão válidas para o site como
+um todo, ou seja, independente do tamanho da tela que será exibido.
+
+*/
+/*Regras gerais*/
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url(../imagem/hypnotize.png);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1, h2, h3, h4, p, figure{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+/*Regras para o topo*/
+#topo{
+    background-color: rgba(24, 56, 29, 0.9);
+    border-bottom: solid 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 img{
+    margin-top: 5px;
+    width: 200px;
+}
+
+nav{
+    min-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 40px;
+    padding-left: 1%;
+}
+ nav a:link, nav a:visited{
+    text-decoration: none;
+    color: white;
+    transition: background-color 1s;
+    padding: 14px 25px;
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 23%;
+ }
+
+ nav a:hover, nav a:focus{
+    background-color: #A98E12;
+    color: #000;
+    transition: background-color 1s;
+    border-radius: 5%;
+ }
+
+ /*Regras do Rodapé*/
+ .rodape{
+    border-top: solid #06632E 5px;
+    background-color: #000;
+    color: #7F7F80;
+    text-align: center;
+    width: 100%;
+ }
+
+ .rodape p{font-size: 14px;}
+
+ .rodape aside{margin: 25px;}
+
+ .rodape img {margin-left: 5px;margin-right: 5px;}
+
+ .rodape-conteudo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+ }
+
+
+
