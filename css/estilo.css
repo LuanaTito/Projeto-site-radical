@@ -212,5 +212,156 @@ toda e centralizamos com a margem em automático. */
     padding: 12px;
 }
 
+/*21/08 - Regras para os articles contidos no #conteudo*/
+
+.card{
+    margin: 15px 0;
+    padding: 5%;
+}
+
+.card-conteudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card p{
+    text-align: center;
+    padding: 1% 0 2% 0;
+}
+.card-conteudo figure{
+    margin: 1%;
+    position: relative;
+    box-shadow: grey 1px 1px 5px;
+}
+
+.card-conteudo figcaption{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    background-color: rgba(127, 127, 128, 0.8);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.card-conteudo figure img{ /*efeito ao passar o mouse de transição*/
+    transition: 1s;
+    filter: opacity(1);
+}
+
+.card-conteudo a:hover img, .card-conteudo a:focus img{
+    filter: opacity(0.6);
+}
+
+#titulo-video{
+    color: #fff;
+    padding: 15px;
+}
+
+#video{
+    width: 100%;
+    background-color: rgba(6, 99, 46, 0.5);
+    text-align: center;
+}
+
+iframe{
+    margin: auto;
+    max-width: 80%;
+    display: block;
+    padding: 2% 0;
+}
+
+/*Regras para o formulário*/
+#form-contato{
+    margin: auto;
+    max-width: 700px;
+    width: 95%;
+}
+
+#form-contato input, #form-contato textarea{
+    border: solid 2px black;
+}
+/*Regra específico para o texte area*/
+#form-contato textarea{
+width: 98%;
+padding: 1%;
+}
+
+/*Regra para o label (rótulo dos campos)*/
+#form-contato label{
+    font-weight: bold;
+}
+
+/*Regras para o botão*/
+#form-contato button{
+    border: none;
+    padding: 2%;
+    background-color: #000;
+    color: white;
+}
+
+#form-contato button:hover,
+#form-contato button:focus{
+    background-color:#ED6D19;
+    cursor: pointer; /*Cursor mãozinha*/
+}
+
+.conteudo-info p {
+    margin: 5%;
+}
+/*Página pacote*/
+#card-pacote{
+    background-color: rgba(6, 99, 46, 0.5);
+   /* display: flex;*/
+    padding: 10px;
+    text-align: center;
+}
+
+.card-pacote-info{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1%;
+    box-shadow: grey 1px 1px 5px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+.pac-fotos, .pac-reserva{
+    background-color: #A98E12;
+    color: #000;
+    width: 80px ;
+    border-radius: 3px;
+    text-align: center;
+    padding: 5px;
+}
+
+.pac-flex{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pac-fotos a:hover, .pac-reserva a:hover{
+    background-color: #ecda87;
+    color: #fff;
+    transition: background-color 1s;
+    border-radius: 5%;
+}
+
+.pac-fotos a:link, .pac-reserva a:link, 
+.pac-fotos a:visited, .pac-reserva a:visited{
+    color: #000;
+    transition: background-color 0.5s;
+    min-height: inherit;
+    padding: 1px 8px;
+    text-decoration: none;
+}
+
+
+
+
 
 
