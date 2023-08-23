@@ -121,27 +121,32 @@ nav a:focus {
     margin-top: 42px;
     margin-left: 10px;
 }
-.menu-rodape a{
+
+.menu-rodape a {
     text-decoration: none;
     color: #7F7F80;
 }
-.menu-rodape a:hover{
+
+.menu-rodape a:hover {
     color: #fff;
 }
-.redes img{
+
+.redes img {
     min-width: 35px;
     width: 35px;
 }
-.redes ul{
+
+.redes ul {
     display: flex;
     text-align: center;
 }
 
-.redes li{
-   width: 15%;
-   padding: 3%; 
+.redes li {
+    width: 15%;
+    padding: 3%;
 }
-.assinatura{
+
+.assinatura {
     color: #fff;
     background-color: #7F7F80;
     text-align: center;
@@ -149,40 +154,43 @@ nav a:focus {
     padding: 1%;
 }
 
-.assinatura p{
+.assinatura p {
     padding-top: 3%;
 }
 
 /*Regra para a área de conteúdo principal.
 Definimos uma largura máxima um pouco menor do que a tela 
 toda e centralizamos com a margem em automático. */
-#conteudo{
+#conteudo {
     max-width: 95%;
     margin: auto;
 }
 
-#conteudo article{
+#conteudo article {
     background-color: white;
     margin: 15px 0;
     padding: 1%;
     box-shadow: grey 1px 1px 5px;
 }
-#conteudo h2, #conteudo h3, #conteudo p{
-    padding: 1% 0;
+
+#conteudo h2,
+#conteudo h3,
+#conteudo p {
+    padding: 1%;
 }
 
-.titulo{
+.titulo {
     font-size: 2em;
     color: #ED6D19;
     text-align: center;
     text-transform: uppercase;
 }
 
-.destaque img{
+.destaque img {
     border-bottom: dotted #ED6D19 5px;
 }
 
-.text-destaque{
+.text-destaque {
     position: relative;
     background-color: rgba(255, 255, 255, 0.8);
     height: 80px;
@@ -192,50 +200,49 @@ toda e centralizamos com a margem em automático. */
 }
 
 .text-destaque h2 {
-    color: #000 !important;/* friza o efito aplicado, cancelando todos os outros.*/
+    color: #000 !important;
+    /* friza o efito aplicado, cancelando todos os outros.*/
     margin-top: 5px;
     padding: 5px 0 3px 50px;
 }
-.text-destaque p{
+
+.text-destaque p {
     margin-top: 5px;
     font-size: 1.1em;
     padding: 0 0 5px 50px;
 }
-#frase{
+
+#frase {
     color: #fff;
     background-color: #ED6D19;
     text-align: center;
     height: 80px;
 }
-#frase p{
+
+#frase p {
     font-size: 1em;
     padding: 12px;
 }
 
 /*21/08 - Regras para os articles contidos no #conteudo*/
 
-.card{
+.card {
     margin: 15px 0;
     padding: 5%;
 }
 
-.card-conteudo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.card p{
+.card p {
     text-align: center;
     padding: 1% 0 2% 0;
 }
-.card-conteudo figure{
+
+.card-conteudo figure {
     margin: 1%;
     position: relative;
     box-shadow: grey 1px 1px 5px;
 }
 
-.card-conteudo figcaption{
+.card-conteudo figcaption {
     position: absolute;
     left: 0;
     bottom: 20px;
@@ -247,27 +254,30 @@ toda e centralizamos com a margem em automático. */
     font-weight: bold;
     text-transform: uppercase;
 }
-.card-conteudo figure img{ /*efeito ao passar o mouse de transição*/
+
+.card-conteudo figure img {
+    /*efeito ao passar o mouse de transição*/
     transition: 1s;
     filter: opacity(1);
 }
 
-.card-conteudo a:hover img, .card-conteudo a:focus img{
+.card-conteudo a:hover img,
+.card-conteudo a:focus img {
     filter: opacity(0.6);
 }
 
-#titulo-video{
+#titulo-video {
     color: #fff;
     padding: 15px;
 }
 
-#video{
+#video {
     width: 100%;
     background-color: rgba(6, 99, 46, 0.5);
     text-align: center;
 }
 
-iframe{
+iframe {
     margin: auto;
     max-width: 80%;
     display: block;
@@ -275,28 +285,26 @@ iframe{
 }
 
 /*Regras para o formulário*/
-#form-contato{
+#form-contato {
     margin: auto;
     max-width: 700px;
     width: 95%;
 }
 
-#form-contato input, #form-contato textarea{
+#form-contato input,
+#form-contato textarea {
     border: solid 2px black;
-}
-/*Regra específico para o texte area*/
-#form-contato textarea{
-width: 98%;
-padding: 1%;
+    width: 375px;
+    margin: 4px auto;
 }
 
 /*Regra para o label (rótulo dos campos)*/
-#form-contato label{
+#form-contato label {
     font-weight: bold;
 }
 
 /*Regras para o botão*/
-#form-contato button{
+#form-contato button {
     border: none;
     padding: 2%;
     background-color: #000;
@@ -304,23 +312,30 @@ padding: 1%;
 }
 
 #form-contato button:hover,
-#form-contato button:focus{
-    background-color:#ED6D19;
-    cursor: pointer; /*Cursor mãozinha*/
+#form-contato button:focus {
+    background-color: #ED6D19;
+    cursor: pointer;
+    /*Cursor mãozinha*/
 }
 
 .conteudo-info p {
     margin: 5%;
 }
+
+.localizacao p {
+    text-align: center;
+}
+
+
 /*Página pacote*/
-#card-pacote{
+#card-pacote {
     background-color: rgba(6, 99, 46, 0.5);
-   /* display: flex;*/
+    /* display: flex;*/
     padding: 10px;
     text-align: center;
 }
 
-.card-pacote-info{
+.card-pacote-info {
     background-color: #fff;
     border-radius: 5px;
     padding: 1%;
@@ -328,31 +343,36 @@ padding: 1%;
     margin: 20px auto;
     max-width: 300px;
 }
-.pac-fotos, .pac-reserva{
+
+.pac-fotos,
+.pac-reserva {
     background-color: #A98E12;
     color: #000;
-    width: 80px ;
+    width: 80px;
     border-radius: 3px;
     text-align: center;
     padding: 5px;
 }
 
-.pac-flex{
+.pac-flex {
     display: flex;
     margin-top: 15px;
     justify-content: center;
     gap: 20px;
 }
 
-.pac-fotos a:hover, .pac-reserva a:hover{
+.pac-fotos a:hover,
+.pac-reserva a:hover {
     background-color: #ecda87;
     color: #fff;
     transition: background-color 1s;
     border-radius: 5%;
 }
 
-.pac-fotos a:link, .pac-reserva a:link, 
-.pac-fotos a:visited, .pac-reserva a:visited{
+.pac-fotos a:link,
+.pac-reserva a:link,
+.pac-fotos a:visited,
+.pac-reserva a:visited {
     color: #000;
     transition: background-color 0.5s;
     min-height: inherit;
@@ -360,8 +380,103 @@ padding: 1%;
     text-decoration: none;
 }
 
+/*23/08/2023*/
 
+.acessorios {
 
+    margin: auto;
+    padding: 15px;
+}
 
+.produtos img {
+    max-width: 100px;
+    border: solid #7F7F80 3px;
+    border-radius: 100%;
+    box-shadow: grey 1px 1px 5px;
 
+}
 
+.produtos {
+    box-shadow: grey 1px 1px 5px;
+    text-align: center;
+    padding: 20px;
+    width: 360px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.produtos h4 {
+    color: #ED6D19;
+    text-transform: uppercase;
+}
+
+.img-produto img {
+    width: 100px;
+    height: 100px;
+}
+
+.acesse {
+    text-transform: uppercase;
+    background-color: #ED6D19;
+    width: 100px;
+    height: 20px;
+    padding: 3px;
+    margin: -10px auto;
+    border-radius: 5px;
+    color: #fff;
+}
+
+/*Trabalhando com  as medias queries
+Regras com ajustes para a visualização do site/conteúdo em tamanhos de telas
+maiores (breackpoints)*/
+
+/*1º Breackpoints*/
+
+@media (min-width:700px) {
+    #topo {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        height: 80px;
+        z-index: 1000;
+        /*Joga o elemento(topo) para cima de todos os 
+    outros elementos da pagina*/
+    }
+
+    #topo div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1 {
+        margin-left: 3%;
+        margin-top: 5px;
+        width: 150px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #conteudo {
+        margin-top: 85px;
+    }
+
+    .assinatura {
+        height: 20px;
+    }
+
+    .assinatura p {
+        padding-top: 1%;
+    }
+
+   .card-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+}
