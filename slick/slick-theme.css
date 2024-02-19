@@ -116,13 +116,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: -50px;
 }
 
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: -110px;
 
     display: block;
 
@@ -155,7 +155,7 @@
     display: block;
 
     width: 20px;
-    height: 20px;
+    height: 368px;
     padding: 5px;
 
     cursor: pointer;
@@ -165,7 +165,7 @@
     outline: none;
     background: transparent;
 
-    margin: 90px;
+   /* margin: 90px;*/
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus

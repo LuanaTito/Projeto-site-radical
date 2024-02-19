@@ -39,6 +39,7 @@ img {
 }
 
 /*Regras para o topo*/
+
 #topo {
     background-color: rgba(24, 56, 29, 0.9);
     border-bottom: solid 1px;
@@ -47,17 +48,18 @@ img {
 }
 
 h1 img {
-    margin-top: 5px;
+    margin-top: 25px;
     width: 200px;
 }
 
+
 nav {
     min-height: 40px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: block;
+    
     text-transform: uppercase;
     font-weight: bold;
+    overflow: hidden;
     line-height: 40px;
     padding-left: 1%;
 }
@@ -67,12 +69,12 @@ nav a:visited {
     text-decoration: none;
     color: white;
     transition: background-color 1s;
-    padding: 14px 25px;
+    /* padding: 14px 25px; */
     min-height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 23%;
+    /* width: 23%; */
 }
 
 nav a:hover,
@@ -92,34 +94,36 @@ nav a:focus {
     width: 100%;
 }
 
-.rodape p {
-    font-size: 14px;
+.rodape p,li {
+    font-size: 16px;
 }
 
-.rodape aside {
-    margin: 25px;
-}
+/* .rodape aside {
+    margin: 25px; 
+} */
 
 .rodape img {
     margin-left: 5px;
     margin-right: 5px;
 }
-
 .rodape-conteudo {
-    display: flex;
+    padding: 15px;
+    color: #fff;
+    /* display: flex;
     justify-content: center;
-    align-content: center;
+    align-content: center; */
 }
 
 .rodape-conteudo ul {
     list-style: none;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 #logo-rodape {
     min-width: 146px;
     width: 150px;
-    margin-top: 42px;
-    margin-left: 10px;
+    margin: 0 auto;
 }
 
 .menu-rodape a {
@@ -150,7 +154,7 @@ nav a:focus {
     color: #fff;
     background-color: #7F7F80;
     text-align: center;
-    height: 50px;
+    height: auto;
     padding: 1%;
 }
 
@@ -180,7 +184,7 @@ toda e centralizamos com a margem em automático. */
 }
 
 .titulo {
-    font-size: 2em;
+    font-size: 1.4em;
     color: #ED6D19;
     text-align: center;
     text-transform: uppercase;
@@ -212,9 +216,10 @@ toda e centralizamos com a margem em automático. */
     padding: 0 0 5px 50px;
 }
 
-.cont-home{
+/* .cont-home{
     height: 290px;
-}
+} */
+
 
 #frase {
     color: #fff;
@@ -469,14 +474,31 @@ maiores (breackpoints)*/
 
     nav {
         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    align-content: center;
+    }
+    nav a{
+        padding: 10px;
     }
 
     #conteudo {
         margin-top: 85px;
     }
+    .rodape-conteudo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    align-content: center;
+   
+    }
+    #logo-rodape, .menu-rodape, .redes{
+        margin: 0 auto;
+    }
 
     .assinatura {
-        height: 20px;
+        height: auto;
     }
 
     .assinatura p {
