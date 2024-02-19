@@ -336,6 +336,7 @@ iframe {
 
 .conteudo-info p {
     margin: 5%;
+    text-align: center;
 }
 
 .localizacao p {
@@ -416,9 +417,9 @@ iframe {
     box-shadow: grey 1px 1px 5px;
     text-align: center;
     padding: 20px;
-    width: 360px;
+    width: 220px;
     height: 200px;
-    margin: 10px;
+    margin: 10px auto;
     border-radius: 5px;
 }
 
@@ -507,9 +508,22 @@ maiores (breackpoints)*/
 
     .card-conteudo {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
 
+    }
+    .acessorios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .produtos{
+        margin: 10px 1%;
+        height: auto;
+    }
+    .acesse{
+        margin: 0 auto;
     }
 
     #card-pacote {
@@ -552,11 +566,7 @@ instalar o js: https://jquery.com/download/ (botão direito salvar como..)
         margin-top: -11px;
     }
 
-    .acessorios {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
     .produtos {
         height: 250px;
