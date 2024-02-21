@@ -1,4 +1,3 @@
-
 //Humburguer
 function clickMenu(){
     // itens.style.display = 'block'
@@ -9,7 +8,6 @@ function clickMenu(){
     }
     
 }
-
 
 
 //MODAL
