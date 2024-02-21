@@ -55,8 +55,7 @@ h1 img {
 
 nav {
     min-height: 40px;
-    display: block;
-    
+    display: none;
     text-transform: uppercase;
     font-weight: bold;
     overflow: hidden;
@@ -65,7 +64,7 @@ nav {
 }
 
 nav a:link,
-nav a:visited {
+nav a:visited, #iconMenu:link, #iconMenu:visited {
     text-decoration: none;
     color: white;
     transition: background-color 1s;
@@ -78,11 +77,22 @@ nav a:visited {
 }
 
 nav a:hover,
-nav a:focus {
+nav a:focus, #iconMenu:hover, #iconMenu:focus {
     background-color: #A98E12;
     color: #000;
     transition: background-color 1s;
     border-radius: 5%;
+}
+#iconMenu{
+    color: white;
+    cursor: pointer;
+    min-height: 40px;
+    display: block;
+    overflow: hidden;
+    line-height: 40px;
+    padding-left: 1%;
+    font-size: 40px;
+    
 }
 
 /*Regras do Rodapé*/
